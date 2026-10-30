@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "detection-claim-audit"
+version = "0.1.0"
+description = "Offline audit of documented box-level vision assertions"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+detection-claim-audit = "detection_claim_audit.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["detection_claim_audit*"]
